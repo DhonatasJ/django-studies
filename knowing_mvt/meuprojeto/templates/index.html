@@ -284,21 +284,21 @@
 							<!-- Destination -->
 							<div class="destination item">
 								<div class="destination_image">
-									<img src="{{baseUrl}}/{{dest.img}}" alt="">
+									<img src="{{dest.img.url}}" alt="">
+
 									{% if dest.offer %}
 									<div class="spec_offer text-center"><a href="#">Special Offer</a></div>
 									{% endif %}
 								</div>
 								<div class="destination_content">
-									<div class="destination_title"><a href="destinations.html">{{destn.name}}</a>
+									<div class="destination_title"><a href="destinations.html">{{dest.name}}</a>
 									</div>
 									<div class="destination_subtitle">
-										<p>{{dest3.desc}}</p>
+										<p>{{dest.desc}}</p>
 									</div>
 									<div class="destination_price">From ${{dest.price}}</div>
 								</div>
 							</div>
-							
 
 							{% endfor %}
 
@@ -478,7 +478,7 @@
 					<div class="col-xl-4">
 						<div class="travello">
 							<div class="background_image"
-								style="background-image:url({% static 'images/travello.jpg)"></div>
+								style="background-image:url(% static 'images/travello.jpg)"></div>
 							<div class="travello_content">
 								<div class="travello_content_inner">
 									<div></div>
