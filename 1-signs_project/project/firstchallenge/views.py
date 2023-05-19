@@ -29,9 +29,6 @@ def home(request):
     return HttpResponse(list_items)
     
 
-
-from django.http import HttpResponse
-
 def monthly_challenge(request, month):
     try:
         change_text = signs[month]
